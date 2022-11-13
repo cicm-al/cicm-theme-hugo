@@ -1,9 +1,9 @@
 {
-  "name": "devfest-theme-hugo",
+  "name": "cicm-theme-hugo",
   "version": "1.0.0",
-  "description": "A theme for a conference website. Created for DevFest Toulouse 2019",
-  "repository": "https://github.com/GDGToulouse/devfest-theme-hugo",
-  "author": "Igor Laborie <ilaborie@gmail.com>",
+  "description": "A theme for a conference website. Created for CICM America Latina",
+  "repository": "https://github.com/cicm-la/cicm-theme-hugo",
+  "author": "security-companion",
   "license": "MIT",
   "private": true,
   "scripts": {

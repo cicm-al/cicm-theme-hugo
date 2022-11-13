@@ -1,12 +1,12 @@
 name = "Devfest Toulouse Theme"
 license = "MIT"
-licenselink = "https://github.com/GDGToulouse/devfest-theme-hugo/LICENSE"
-description = "A theme for a conference website. Created for DevFest Toulouse 2019"
-homepage = "https://github.com/GDGToulouse/devfest-theme-hugo"
+licenselink = "https://github.com/cicm-la/cicm-theme-hugo/LICENSE"
+description = "A theme for a conference website. Created for CICM AL 2023"
+homepage = "https://github.com/cicm-la/cicm-theme-hugo"
 tags = ["conference", "DevFest"]
 features =  ["conference", "responsive", "l10n", "google-analytics"]
 min_version = "0.50"
 
 [author]
-  name = "GDG Toulouse"
-  homepage = "//github.com/GDGToulouse"
+  name = "CICM LA"
+  homepage = "//github.com/cicm-la"
