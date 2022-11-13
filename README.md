@@ -12,6 +12,7 @@ Note that requires the [Node](https://nodejs.org/en/) toolchains
 ```bash
 hugo new site my-conf
 cd my-conf
+git init
 mkdir themes
 git submodule add https://github.com/cicm-la/cicm-theme-hugo.git themes/cicm-theme-hugo
 
