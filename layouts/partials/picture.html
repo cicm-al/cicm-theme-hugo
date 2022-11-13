@@ -8,10 +8,12 @@
 {{- $img := index . "img" }}
 {{- $imgName := index (split (path.Base $img) ".") 0 }}
 {{- $imgBase := path.Join (path.Dir $img) $imgName }}
+{{- $alt := index . "alt" }}
 {{- $class := index . "class" }}
 {{- $widths := index . "widths" }}
 {{- $ext := path.Ext $img }}
 <picture {{ if $class }}class="{{ $class }}"{{ end }}>
+	{{ if or (or (eq $ext "jpg") (eq $ext "jepg")) }}
 	{{ if $widths }}
 		{{ $max := 0 }}
 		{{ range $widths }}
@@ -25,5 +27,6 @@
 	<source srcset="{{ $imgBase }}.webp" type="image/webp">
 	{{ end }}
 	<source srcset="{{ $img }}">
-	<img src="{{ $img }}" alt="">
+	{{ end }}
+	<img src="{{ $img }}" alt="{{ $alt }}">
 </picture>

@@ -8,33 +8,33 @@
   "private": true,
   "scripts": {
     "watch:script": "rollup -c --watch",
-    "watch:style": "node-sass src/styles/theme.scss -o static --watch",
+    "watch:style": "sass src/styles/theme.scss static/theme.css --watch",
     "start": "run-p watch:*",
     "build:icons": "node icons.js",
     "build:script": "rollup -c rollup.config.prod.js",
-    "build:style": "node-sass src/styles/theme.scss -o static; postcss static/theme.css --replace",
+    "build:style": "sass src/styles/theme.scss static/theme.css; postcss static/theme.css --replace",
     "build": "run-p build:*"
   },
   "dependencies": {
-    "core-js": "^3.6.5"
+    "core-js": "^3.21.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.5",
-    "@babel/polyfill": "^7.10.4",
-    "@babel/preset-env": "^7.10.4",
-    "@types/js-yaml": "^3.12.5",
-    "cssnano": "^4.1.8",
-    "glob": "^7.1.6",
-    "node-sass": "^7.0.0",
+    "@babel/core": "^7.17.2",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.16.11",
+    "@types/js-yaml": "^4.0.5",
+    "cssnano": "^5.0.17",
+    "glob": "^7.2.0",
     "npm-run-all": "^4.1.5",
-    "plop-logger": "^3.1.3",
-    "postcss-cli": "^7.1.1",
-    "postcss-preset-env": "^6.7.0",
-    "rollup": "^1.32.1",
+    "plop-logger": "^3.1.7",
+    "postcss-cli": "^9.1.0",
+    "postcss-preset-env": "^7.3.2",
+    "rollup": "^2.67.2",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-uglify": "^6.0.4",
-    "sass-mq": "^5.0.1",
-    "stylelint": "^13.6.1"
+    "rollup-plugin-uglify": "github:ryanwillis/rollup-plugin-uglify#ff91f958935946798879035eb6afd985ad5ed01d",
+    "sass": "^1.49.7",
+    "sass-mq": "^6.0.0",
+    "stylelint": "^14.5.0"
   }
 }
